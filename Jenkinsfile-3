@@ -1,11 +1,10 @@
 pipeline {
-  agent { 
-            dockerfile { 
-                filename 'Testfile'
-            }
-                label 'linux-1'
-                
-        }
+  agent {
+    dockerfile {
+      filename 'Testfile' // Specify the custom Dockerfile name
+    }
+    label 'linux-1' // Specify the label for the agent
+  }
   stages {
     stage('Test') {
       steps {
