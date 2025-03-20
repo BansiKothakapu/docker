@@ -1,7 +1,7 @@
 pipeline {
   agent {
     dockerfile {
-      filename 'Testfile' // Specify the custom Dockerfile name
+      filename 'Dockerfile' // Specify the custom Dockerfile name
     }
     label 'linux-1' // Specify the label for the agent
   }
